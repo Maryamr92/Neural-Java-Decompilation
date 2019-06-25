@@ -19,6 +19,10 @@ There are many networks to translate the languages and also evaluate the transla
  
 The base NMT network works well for Spanish to English translation. There is some conflict between the data between that project and this neural decompilation. Thus, the result is not significant. 
 
+Implementation
+
+This work is implemented on Tensorflow, Keras. python version 3.7. You need to install java-jdk in your environment.
+
 
 
 
