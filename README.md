@@ -9,7 +9,7 @@ This work consists of three steps:
  
 1. Preparing Data 
 
-The most important part in this project is the dataset. Most neural machine translation(NTM) use dictionary dataset to train the network. This project as simple task just uses a dataset with 50 JVM bytecodes and their corresponding java programs. A Java compiler in the code is used to generate the bytecodes and saved them as a txt.file in a certain format. The comments in both programs (high-level and low-level) are eliminated to avoid mislearning the network. The final file is generated with 100 lines that each two lines represent the low-level program and its high-level program in respect. 
+The most important part in this project is the dataset. Most neural machine translation(NTM) use dictionary dataset to train their networks. This project as simple task just uses a dataset with 50 JVM bytecodes and their corresponding java programs. A Java compiler in the code is used to generate the bytecodes and saved them as a txt.file in a certain format. The comments in both programs (high-level and low-level) are eliminated to avoid mislearning the network. The final file is generated with 100 lines that each two lines represent the low-level program and its high-level program in respect. 
 
 2. Neural Network 
 
