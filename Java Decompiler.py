@@ -20,7 +20,7 @@ tf.enable_eager_execution()
 
 def compile_java(txt_file):
   output_bytecode = "bytecode.txt"
-  path_files = "/home/hamid/Maryam/java_dataset/"
+  path_files = ".../java_dataset/"
   open_file = open(path_files + txt_file + '.txt', 'r')
   lines = open_file.readlines()
   copy_flag=False
@@ -49,8 +49,8 @@ def compile_java(txt_file):
 
 def rewrite_bytecode():
   # jvm_bytecode = unicode_to_ascii(w.lower().strip())
-  file1 = open('/home/hamid/Maryam/bytecode.txt', 'r')
-  file2 = open('/home/hamid/Maryam/java_dataset/bytecode_java.txt', 'a')
+  file1 = open('.../bytecode.txt', 'r')
+  file2 = open('.../bytecode_java.txt', 'a')
   file2.write("\n")
   lines = file1.readlines()
   copy_flag=False
@@ -90,7 +90,7 @@ for i in range(50):
     # print(line)
   bytecode_java.write(".")
 
-path_to_file = "/home/hamid/Maryam/java_dataset/bytecode_java.txt"
+path_to_file = ".../bytecode_java.txt"
 # print("path_to_file:   "+path_to_file)
 
 # Converts the unicode file to ascii
@@ -200,8 +200,8 @@ convert(targ_lang, target_tensor_train[0])
 BUFFER_SIZE = len(input_tensor_train)
 BATCH_SIZE = 32
 steps_per_epoch = len(input_tensor_train)//BATCH_SIZE
-embedding_dim = 50
-units = 50
+embedding_dim = 100
+units = 100
 vocab_inp_size = len(inp_lang.word_index)+1
 vocab_tar_size = len(targ_lang.word_index)+1
 
